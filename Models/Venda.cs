@@ -13,9 +13,15 @@ namespace GestãoCarros.Models
 
         public Guid VeiculoId { get; set; }
 
+        public Veiculo? Veiculo { get; set; }
+
         public Guid UsuarioId { get; set; }
 
-        public int ValorVenda { get; set; }
+        public decimal ValorVenda { get; set; }
+
+        public string? ClienteNome { get; set; }
+
+        public int ClienteCpf { get; set; }
 
         public DateTime DataVenda { get; set; }
     }
