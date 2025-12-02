@@ -37,5 +37,7 @@ namespace GestãoCarros.Models
 
         [Url]
         public string? Site { get; set; }
+
+        public bool Ativo { get; set; } = true;
     }
 }
