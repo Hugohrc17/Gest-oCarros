@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using GestãoCarros.Models.Enums;
 
 
 namespace GestãoCarros.Models
@@ -16,15 +17,19 @@ namespace GestãoCarros.Models
         public int AnoFabricacao { get; set; }
         
         [Required]
-        public int Preco { get; set; }
+        public decimal Preco { get; set; }
 
         [Required]
-        public string? FabricanteId { get; set; }
+        public int FabricanteId { get; set; }
+        
+        public Fabricante? Fabricante { get; set; }
 
         [Required]
-        public string? Tipo { get; set; }
+        public TipoVeiculo? Tipo { get; set; }
 
         [MaxLength(500)]
         public string? Descricao { get; set; }
+
+        public bool Ativo { get; set; } = true;
     }
 }
