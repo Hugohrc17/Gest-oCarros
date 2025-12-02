@@ -1,4 +1,4 @@
-using GestãoCarros.Controllers;
+using GestãoCarros.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace GestãoCarros.Data
